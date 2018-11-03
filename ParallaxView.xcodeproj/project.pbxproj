@@ -60,17 +60,49 @@
 		8B111EB5218032200022643B /* ParallaxView */ = {
 			isa = PBXGroup;
 			children = (
-				8B111EB6218032200022643B /* AppDelegate.swift */,
-				8B111EB8218032200022643B /* ViewController.swift */,
-				8B111EBA218032200022643B /* Main.storyboard */,
-				8B111EBD218032230022643B /* Assets.xcassets */,
-				8B111EBF218032230022643B /* LaunchScreen.storyboard */,
-				8B111EC2218032230022643B /* Info.plist */,
+				8B111ED0218D5F840022643B /* Product */,
+				8B111ED1218D5FAF0022643B /* ViewControllers */,
+				8B111ECF218D5F570022643B /* Resources */,
+				8B111ECE218D5F320022643B /* ParallaxView */,
+			);
+			path = ParallaxView;
+			sourceTree = "<group>";
+		};
+		8B111ECE218D5F320022643B /* ParallaxView */ = {
+			isa = PBXGroup;
+			children = (
 				8B111EC8218033040022643B /* ParallaxContainerView.xib */,
 				8B111ECC218D5A040022643B /* ParallaxContainerView.swift */,
 				8B111ECA218033110022643B /* ParallaxView.swift */,
 			);
 			path = ParallaxView;
+			sourceTree = "<group>";
+		};
+		8B111ECF218D5F570022643B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B111EBA218032200022643B /* Main.storyboard */,
+				8B111EBD218032230022643B /* Assets.xcassets */,
+				8B111EBF218032230022643B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B111ED0218D5F840022643B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				8B111EB6218032200022643B /* AppDelegate.swift */,
+				8B111EC2218032230022643B /* Info.plist */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		8B111ED1218D5FAF0022643B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B111EB8218032200022643B /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ParallaxView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ParallaxView/Product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ParallaxView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ParallaxView/Product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
