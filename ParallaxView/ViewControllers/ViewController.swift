@@ -17,6 +17,10 @@ class ViewController: UIViewController {
         addDefaultParallax()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     private func addDefaultParallax() {
         ParallaxView.add(to: tableView, image: UIImage(named: "sampleImage")!, title: "ParallaxView")
     }

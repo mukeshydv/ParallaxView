@@ -46,7 +46,7 @@ class ParallaxView: UIView {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = -(scrollView.contentOffset.y + scrollView.contentInset.top)
         clipsToBounds = offsetY <= 0
-        bottomLayoutConstraint?.constant = offsetY >= 0 ? 0 : -offsetY / 2
+        bottomLayoutConstraint?.constant = offsetY >= 0 ? 0 : -offsetY
         heightLayoutConstraint.constant = max(offsetY + scrollView.contentInset.top, scrollView.contentInset.top)
     }
 }
